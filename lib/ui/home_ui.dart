@@ -1,27 +1,21 @@
-import 'package:flutter/material.dart';
-import 'package:http/http.dart';
-import 'package:movie_app/util/network.dart';
-class MovieMain extends StatefulWidget {
-  @override
-  _MovieMainState createState() => _MovieMainState();
-}
+// import 'dart:convert';
+// import 'dart:ffi';
+// import 'package:http/http.dart' as http;
+// import 'package:movie_app/main.dart';
 
-class _MovieMainState extends State<MovieMain> {
-  late Future mObject;
-  String _movieName = "Fight Club";
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    mObject = getMovieName(movieName: _movieName);
-  }
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Text(mObject.toString()),
-    );
-  }
+// import 'package:flutter/material.dart';
+// import 'package:movie_app/util/network.dart';
+// class MovieMain extends StatelessWidget   {
+  
+//   final dynamic snapshot;
+//   MovieMain({this.snapshot});
+//   @override
+//   Widget build(BuildContext context) {
+//     var movieName = snapshot.data.originalTitle;
+//     return Container(
+//       child: Text(_data['original_title']),
+//     );
+//   }
+// }
 
-Future getMovieName ({required String movieName}) =>
-new Network().moviesModel(movieName: _movieName);
-}
+ 
